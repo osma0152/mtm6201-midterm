@@ -163,25 +163,24 @@ h2 {
 }
 
 .footer-logo {
-    justify-content: center;
     position: relative;
-    top: 10px;
-    left: 50px; 
+    /* top: 1px;
+    left: -40px; 
     width: 150px; 
-    height: auto; 
+    height: auto;  */
 }
 
+.footer-nav {
+    padding: 10px;
+}
 .footer-nav .ul-pink {
     display: flex;
-    flex-direction: column;
-    justify-content: right;
-    
-    margin: 30px 0;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.footer-nav a {
-    display: flex;
-    text-align: center;
+.footer-nav .ul-pink li a {
+    margin: 10px;
 }
 
 .socials {
