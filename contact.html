@@ -20,21 +20,29 @@
     </header>
 
     <main>
-        <h2>Contact Page</h2>
-        <p>Feel free to contact us using the form below:</p>
+        <section class="contact-title">
+            <h2>Contact Us</h2>
+        </section>
+        <section class="contact">
+            <div class="container">
+                <div>
+                    <img class="contact-image" src="./images/black-woman-baking.jpeg" alt="baker">
+                </div>
+                <div class="contact-wrap">
+                    <form action="submit_form.php" class="contact-form">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required><br>
 
-        <form action="submit_form.php" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required><br>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea><br>
-
-            <input type="submit" value="Submit">
-        </form>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea><br>
+                        <input type="submit" value="Submit" class="submit">
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="footer">
         <div class="footer-logo">
@@ -47,7 +55,7 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
-        <!-- <p>CONNECT WITH US</p> -->
+
         <div class="socials">
             <a href="/"><i class="fa-brands fa-instagram"></i></a>
             <a href="/"><i class="fa-brands fa-twitter"></i></a>
