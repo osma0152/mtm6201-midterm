@@ -1,9 +1,11 @@
+/* Sets the margin, padding, and box-sizing properties to 0 for all elements, ensuring a consistent layout. */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Sets the font family to 'Mulish' and applies some styles to the body element, such as margin, padding, overflow, and text color. */
 body {
     font-family: 'Mulish', sans-serif;
     margin: 0;
@@ -12,12 +14,14 @@ body {
     color:#FF3087;
     }
 
+/* Sets the font family to 'Archivo Black' and font size to 3rem for all h1 elements. */
 h1 {
     font-family: 'Archivo Black', sans-serif;
     font-size: 3rem;
     }
     
 
+/* Sets the font family to 'Anton' and applies various styles to h2 elements, including text alignment, padding, text transformation, and color.   */
 h2 {
     font-family: 'Anton', sans-serif;
     text-align: center;
@@ -27,6 +31,7 @@ h2 {
     color: #FF3087;
 }
 
+/* Sets the width of the container class to either 78em or 100% of the parent element's width and centers it horizontally using auto margins. It also adds padding to the left and right sides. */
 .container {
     width: min(78em, 100%);
     margin: 0 auto;
@@ -40,6 +45,7 @@ h2 {
 
 
 /* LOGO */
+ /* sets the position, size, and dimensions of the logo element. */
 .logo {
     position: absolute;
     top: 40px;
@@ -48,46 +54,11 @@ h2 {
     height: auto;
 }
 
-/* BANNER */
 
-/* banner background image */
-.hero-banner {
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(to bottom, #0009, #0009), url('../images/20595006.jpg');
-    background-size: cover;
-    background-position: center;
-}
+/* NAVIGATION */
+/* styles for the navigation bar, including its position, size, and padding. It also defines the styles for the links 
+in the navigation bar, differentiating between the ones with white and pink text color. */
 
-/* banner text */
-.title-banner {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;
-    }
-
-/* banner button */
-.btn-banner {
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        color:#FF3087;
-    }
-
-
-
-
-    /* NAVIGATION */
-
-/* HOME & MENU */
-
-/* nav bar */
 .navbar {
         position: absolute;
         width: 100%;
@@ -98,7 +69,7 @@ h2 {
         width: 200px;
     }
 
-/* removes styling of off ALL  */
+
 ul a {
     display: flex;
     padding: .75rem 1.5rem;
@@ -109,7 +80,7 @@ ul a {
     font-weight: bold;
 }
 
-/* removes a styling for CONTACT & ABOUT  */
+/* removes a tag styling for CONTACT & ABOUT  */
 
 .ul-pink a {
     display: flex;
@@ -121,12 +92,8 @@ ul a {
     font-weight: bold;
 }
 
-/* GENERAL STYLING */
-
-
-/* moves list items it to the left side of the page */
-
-/* removes styling off of ALL ul's and FLEXES the direction */
+/* styles for unordered lists, including removing the default 
+styling, setting them to display as flex containers with a row direction. */
 ul {
         padding: 0;
         margin: 0;
@@ -137,7 +104,8 @@ ul {
 
 /* BUTTONS */
 
-/* stylizes button to the theme*/
+/* styles for buttons, including the background color, text color, box shadow, border radius, width, padding, 
+margin, and border. It also sets the opacity to 1 and removes the text decoration for button links. */
 button {
     background: #82DE2D;
     color: #FF3087;
@@ -150,7 +118,6 @@ button {
     opacity: 1;
     }
 
-/* removes styling off of button link */
 button a {
     text-decoration: none;
     color: #FF3087;
@@ -165,7 +132,9 @@ button a {
 
 /* BANNER */
 
-/* banner background image */
+/* Sets styles for the hero banner section, including the background image, size, and position, as well as the 
+position and styles for the banner text and button. */
+
 .hero-banner {
     width: 100%;
     height: 100vh;
@@ -174,7 +143,6 @@ button a {
     background-position: center;
 }
 
-/* banner text */
 .title-banner {
     position: absolute;
     top: 45%;
@@ -185,7 +153,6 @@ button a {
     text-transform: uppercase;
     }
 
-/* banner button */
 .btn-banner {
         position: absolute;
         top: 60%;
@@ -197,6 +164,9 @@ button a {
 
 
 /* POPULAR PRODUCTS */
+
+/* sets the styles for the popular products section, 
+including the container, title, menu card images, and buttons */
 
 .container {
     display: flex; 
@@ -229,6 +199,7 @@ button a {
 }
 
 /* TESTIMONIALS */
+/* Sets the styles for the testimonials section, including the container, card, content, and text. */
 
 .testimonial-container {
     display: flex;
@@ -263,6 +234,8 @@ button a {
 
 
 /* ABOUT PAGE */
+
+/* Sets the styles for the about page, including the container, image, content title, and text. */
 
 .about .container {
     padding-bottom: 11rem;
@@ -304,6 +277,7 @@ button a {
 }
 
 /* CONTACT */
+/* Sets the styles for the contact page, including the container, title, form, input fields, submit button and contact image */
 
 .contact-title {
     text-transform: uppercase;
@@ -375,8 +349,6 @@ textarea {
     border-radius: 0.50rem;
 }
 
-
-
 .contact-image {
     background-image: url('../images/black-woman-baking.jpeg');
     width: 570px;
@@ -390,6 +362,7 @@ textarea {
 
 
 /* FOOTER */
+/* footer section, including the container, logo, navigation, socials, and text. */
 
 .footer {
     background-color:#82DE2D;
