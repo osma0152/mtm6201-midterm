@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@600&family=Archivo+Black&family=Monoton&family=Mulish&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ae0ef061fe.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -12,53 +15,98 @@
         <div class="hero-banner"></div>
         <div>
             <h1 class="title-banner">The Perfect Bite Every Time!</h1>
-            <button class="btn-banner"><a href="menu.html">Order Now</a></button>
+            <button class="btn-banner"><a href="#main-content">Continue</a></button>
         </div>
         <nav class="navbar">
             <ul>
-                <li><a href="menu.html">Menu</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <a href="index.html"><img class="logo" src="./images/flour_power_logo.png" alt="flour power logo"></a>
     </header>
-    <main>
-        <section>
-            
-        </section>
-        <section>
+    <main id="main-content">
+        <section class="popular-products">
             <h2>Popular Products</h2>
-            <div class="carousel">
-                <ul>
-                    <li class="carousel-item">Double Chocolate Cookies</li>
-                    <li class="carousel-item">M&M Cookies</li>
-                    <li class="carousel-item">Peanut Butter Cookies</li>
-                    <li class="carousel-item">Sugar Cookies</li>
-                </ul>
+            <div class="container">
+                <div class="menu-card">
+                    <div class="menu-card-image">
+                        <img src="./images/m&m_cookies.jpeg" alt="M&M Cookies">
+                    </div>
+                    <h3>M&M Cookies</h3>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-card-image">
+                        <img src="./images/double_chocolate.jpeg" alt="Double Chocolate Cookies">
+                    </div>
+                    <h3>Double Chocolate Cookies</h3>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-card-image">
+                        <img src="./images/Frosted-Sugar-Cookies-7.jpg" alt="Sugar Cookies">
+                    </div>
+                    <h3>Sugar Cookies</h3>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-card-image">
+                        <img src="./images/peanut_butter_cookie.jpeg" alt="Peanut Butter Cookies">
+                    </div>
+                    <h3>Peanut Butter Cookies</h3>
+                </div>
             </div>
-                <button class="btn"><a href="menu.html">Menu</a></button> 
+            <div class="popular-products-btn">
+            <button class="btn"><a href="contact.html">Order Now</a></button>
+            </div>
         </section>
-        <section>
-            <h2>Testimonials</h2>
-            <ul>
-                <li>“This small cookie shop is a true 
-                    hidden gem, delivering delectable 
-                    treats that will melt in your mouth. 
-                    From classic flavors to unique creations, 
-                    their cookies are a must-try 
-                    for any sweet tooth.”</li>
-                <li>“This small cookie shop is an absolute 
-                    delight for cookie enthusiasts. From the 
-                    moment you step in, the heavenly aroma 
-                    and delectable variety of freshly baked 
-                    cookies will leave you craving for more.”</li>
-                <li>“This small business cookie shop is a 
-                    delightful haven for cookie lovers. Their 
-                    cookies are freshly baked, irresistibly 
-                    delicious, and their warm and friendly 
-                    service makes it an absolute treat to visit.”</li>
-            </ul>
+        <section class="testimonial">
+                <h2>Testimonials</h2>
+                <div class="testimonial-container">
+                    <div class="testimonial-card">
+                        <div class="name-user">
+                            <h3>Janet Lewis</h3>
+                        </div>
+                        <div class="testimonial-content">
+                            <p>
+                                “This small cookie shop is a true 
+                                hidden gem, delivering delectable 
+                                treats that will melt in your mouth. 
+                                From classic flavors to unique creations, 
+                                their cookies are a must-try 
+                                for any sweet tooth.”
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="name-user">
+                            <h3>Janet Lewis</h3>
+                        </div>
+                        <div class="testimonial-content">
+                            <p>
+                                “This small cookie shop is a true 
+                                hidden gem, delivering delectable 
+                                treats that will melt in your mouth. 
+                                From classic flavors to unique creations, 
+                                their cookies are a must-try 
+                                for any sweet tooth.”
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="name-user">
+                            <h3>Janet Lewis</h3>
+                        </div>
+                        <div class="testimonial-content">
+                            <p>
+                                “This small cookie shop is a true 
+                                hidden gem, delivering delectable 
+                                treats that will melt in your mouth. 
+                                From classic flavors to unique creations, 
+                                their cookies are a must-try 
+                                for any sweet tooth.”
+                            </p>
+                        </div>
+                    </div>
+            </div>
         </section>
     </main>
     <footer class="footer">
@@ -67,7 +115,6 @@
         </div>
         <div class="footer-nav">
             <ul class="ul-pink">
-                <li><a href="menu.html">Menu</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -77,9 +124,17 @@
             <a href="/"><i class="fa-brands fa-twitter"></i></a>
             <a href=""><i class="fa-brands fa-facebook"></i></a>
         </div>
-        <small><p>&copy; Flour Power 2023</p></small>
+        <small>&copy; Flour Power 2023. Images from Adobe XD</small>
     </footer>
 </body>
 </html>
+
+
+
+
+
+
+
+
 
 
